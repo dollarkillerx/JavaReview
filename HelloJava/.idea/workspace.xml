@@ -2,39 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdfbde55-f7f1-4799-846f-75a4973b471e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/genericparadigm/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genericparadigm/Clothes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genericparadigm/FuncGeneric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genericparadigm/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genericparadigm/GoodsSeller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genericparadigm/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genericparadigm/NumGeneric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genericparadigm/Shoes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/genericparadigm/TwoNumGeneric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/map/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/map/demo/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/map/demo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/set/ListDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/set/hashset/WordDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/set/smalldemo1/Notice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/set/smalldemo1/NoticeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/set/testdemo/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/set/testdemo/GenericParadigm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/set/testdemo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/string/StringBuilderDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/string/StringDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/string/StringDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tools/exception/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tools/exception/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tools/exception/Test4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wrap/WrapTestOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wrap/WrapTestTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/web/xml/hr-schema.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/web/xml/hr.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/web/xml/hr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/web/xml/hr.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/com/tools/exception/Test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloJava/com/tools/exception/Test1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaWeb.md" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaWeb.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,8 +42,8 @@
         <entry file="file://$PROJECT_DIR$/../JavaWeb.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="44">
-                <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <first_editor relative-caret-position="510">
+                <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -84,6 +57,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
@@ -98,11 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/test1/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/testfunc/main.java" />
-        <option value="$PROJECT_DIR$/src/com/testlist/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/testlist/GetSet.java" />
-        <option value="$PROJECT_DIR$/src/com/testdemo1/Major.java" />
         <option value="$PROJECT_DIR$/src/com/testdemo1/Student.java" />
         <option value="$PROJECT_DIR$/src/com/testdemo1/Main.java" />
         <option value="$PROJECT_DIR$/src/com/singlemode/SingleMode.java" />
@@ -148,6 +117,11 @@
         <option value="$PROJECT_DIR$/src/com/genericparadigm/TwoNumGeneric.java" />
         <option value="$PROJECT_DIR$/src/com/genericparadigm/FuncGeneric.java" />
         <option value="$PROJECT_DIR$/../README.md" />
+        <option value="$PROJECT_DIR$/src/web/xml/hr.tld" />
+        <option value="$PROJECT_DIR$/src/web/xml/hr.xml" />
+        <option value="$PROJECT_DIR$/src/web/xml/hr.dtd" />
+        <option value="$PROJECT_DIR$/src/web/xml/hr.xsd" />
+        <option value="$PROJECT_DIR$/src/web/xml/hr-schema.xml" />
         <option value="$PROJECT_DIR$/../JavaWeb.md" />
       </list>
     </option>
@@ -159,10 +133,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="637" />
-    <option name="y" value="194" />
-    <option name="width" value="1250" />
-    <option name="height" value="1153" />
+    <option name="x" value="382" />
+    <option name="y" value="94" />
+    <option name="width" value="1631" />
+    <option name="height" value="846" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -178,6 +152,11 @@
               <item name="HelloJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="HelloJava" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HelloJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -190,7 +169,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/web/xml" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/web/xml" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -270,6 +255,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.39" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_HelloJava" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="43859" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.FuncGeneric" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.Main (3)" />
+      <item itemvalue="Application.NumGeneric" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.FuncGeneric" />
@@ -292,18 +347,17 @@
       <updated>1554388820341</updated>
       <workItem from="1554388824585" duration="1405000" />
       <workItem from="1554424238609" duration="36181000" />
-      <workItem from="1554511599246" duration="24823000" />
+      <workItem from="1554511599246" duration="30868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62409000" />
+    <option name="totallyTimeSpent" value="68454000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="637" y="194" width="1250" height="1153" extended-state="0" />
-    <editor active="true" />
+    <frame x="382" y="94" width="1631" height="846" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993954" visible="true" weight="0.1905158" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993954" weight="0.2008844" />
       <window_info id="Structure" order="1" sideWeight="0.50060457" side_tool="true" weight="0.19227968" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -312,7 +366,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50060457" side_tool="true" weight="0.19227968" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23851417" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26378378" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -382,95 +436,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/testlist/GetSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/testdemo1/Major.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="24" selection-start-line="3" selection-start-column="3" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/testdemo1/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/testdemo1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/testdemo1/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/singlemode/LazyPerson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -944,11 +909,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/xml/hr.tld">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/xml/hr.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/xml/hr.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/xml/hr-schema.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/xml/hr.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../JavaWeb.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="44">
-            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <first_editor relative-caret-position="510">
+            <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
