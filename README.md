@@ -333,9 +333,248 @@ Throwable
     ```
     ![](./README/yc.png)
     - System.exit(1); 终止程序运行
+- throw & throws
+    - throws 如果方法可能出现异常，但是没有能力处理这种异常，可以在方法声明处用throws子句声明抛出异常
+    ``` 
+    throws语句用在方法定义时声明该方法要抛出的异常类型
+    public void method() throws Exception1,Exception2...{
+        // 可能产生异常的代码
+    }
+    当方法抛出异常列表中的异常时，方法将不对这些类型及其子类型的异常做处理，而抛向调用该方法
+    ```
+    - throw 抛出异常
+        - 只能是Throwable或者是其子类的实例对象
+        - 1. 自己抛出 自己捕获 代码内写try catch 抛出自己捕获
+        - 2. throws声明
+    - 自定义异常 extends Exception
+    - 异常链 逐层抛出
+    - 尽量在finally语句中区释放占用资源的操作
+#### 包装类
+- 装箱 基本数据类型 -> 包装类
+- 拆箱 包装类 -> 基本数据类型
+``` 
+        // 1. 自动装箱
+        int t1 = 2;
+        Integer t2 = t1;
+        System.out.println(t1);
+        System.out.println(t2);
+        // 2. 手动装箱
+        Integer t3 = new Integer(t1);
+        System.out.println(t3);
+        System.out.println("-----------------");
+        // 拆箱
+        // 1. 自动拆箱
+        int t4 = t2;
+        // 2. 手动拆箱
+        int t5 = t3.intValue();
+        System.out.println(t4);
+        System.out.println(t5);
+        System.out.println("-----------------");
+        double t6 = t2.doubleValue();
+        System.out.println(t6);
+        
+        // 其他类型转换
+            // 基本数据类型转str
+            int t1 = 2;
+            String t2 = Integer.toString(t1);
+            System.out.println(t2);
+            // str 转基本数据类型
+            // 1. 通过包装类的parse
+            int t3 = Integer.parseInt(t2);
+            // 2. 先将str转换为包装类然后通过自动类型转换完成
+            int t4 = Integer.valueOf(t2);
+            System.out.println(t3);
+            System.out.println(t4);
+```
+#### 字符串处理类
+- String
+    - 创建
+    ``` 
+    String s1 = "dollarkiller";
+    String s2 = new String();
+    String s3 = new String("dol");
+    ```
+    - 方法
+        - length()
+        - indexOf() 第一次出现的位置
+        - lastIndexOf() 最后出现的位置
+        - `substring(int beginIndex,[end])` `[end]`选填 获取开始到结束的str
+        - trim() 去掉前后的空格
+        - equals() 比对str的字符是否是一样的
+        - toLowerCase() 转小写
+        - toUpperCase() 转大写
+        - charAt(int index) 取指定位置的str
+        - split(String regex分隔符,int limit) str转数组
+        - getBytes() str转为byte数组 
+        - replace() 替换
+    - getBytes()
+        ``` 
+            String str = new String("Java编程基础");
+            byte[] arrs = str.getBytes();
+            for(byte i:arrs) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+            String str1 = new String(arrs);
+            System.out.println(str1);
+        ```
+    - 等于运算符与equals方法的区别
+        - equals 内容一样就相同
+        ![](./README/sj.png)
+- StringBuilder
+    - 区别
+        - String具有不可变性，而StringBuilder不具备
+    - 建议
+        - 当频繁操作str时，使用StringBuilder
+    - StringBuilder和StringBuffer
+        - StringBuffer是线程安全 StringBuilder没有so性能会高一点
+    - append()
+    - charAt()
+    - delete()
+    - indexOf()
+    - insert()
+    - length()
+    - replace()
+    - substring()
+    - toString()
+#### 集合 java.util
+- 无法预测存储数量的数据
+- 存储具有一对一关系的数据
+- 进行数据的增删
+- 数据重复
+- 体系结构
+    - Collection 类的对象
+        - List 序列  
+        - Queue 队列
+            (List Queue存放数据有序 可以重复)
+        - Set 集合
+            无序不允许重复
+    - Map 键值对
+    ![](./README/sst.png)
+- Collection
+    - 动态增长
+    - 查询 更新 复杂度O(1) 删除OR插入复杂度O(n)
+    - 元素可以为null
+    - add()
+    - clear() 清空
+    - contains(obj) 判断是否包含obj 某个元素
+    - isEmpty() 集合是否为空
+    - iterator() 迭代器
+    - remove() 移除某个元素
+    - size()
+    - tiArray() 转换为数组
+- ArrayList  
+    - get(int index) 返回指定位置的元素 
+    - indexOf()
+    - set(index,obj)
+    - 小案例： 公告管理
+        - 公告的添加和显示
+        - 在指定位置插入公告
+        - 删除公告
+        - 修改公告
+- Set概述
+    - HashSet 哈希集
+    - 良好的存储和查找
+    - 不能重复 可以有null so只允许有一个null
+- Iterator(迭代器)
+    > Iterator接口可以以统一的方式对各种集合元素进行遍历
+    - hasNext() 检测集合中是否还有下一个元素
+    - next() 返回结合中下一个元素
+    ``` 
+        Set set = new HashSet();
+        set.add("blue");
+        set.add("red");
+        set.add("block");
+        set.add("yellow");
+        set.add("white");
 
+        System.out.println("集合中的元素为: ");
+        Iterator it = set.iterator();
+        // 遍历迭代器并输出
+        while (it.hasNext()) {
+            System.out.print(it.next() + ",");
+        }
+    ```
+- 泛型 `Set<Cat> set = new HashSet<Cat>();` 这样调用就可以不同类型转换了
+- 移除
+ ``` 
+ Set<Cat> set1 = new HashSer<Cat>();
+ for(Cat cat:set) {
+    if(cat.getMonth()<5) {
+        set1.add(cat)
+    }
+ }
+ set.removeAll(set1)
+ 在查询的时候是不运行修改的
+ ```    
+- Map (key-value)
+    - HashMap 给予哈希表的Map接口实现
+    - 运行有null键
+    - key值不允许重复
+    - entrySet() 返回所有键值对
+    - keySet() 返回所有key值
+    - get(key)
+    - put(k,v)
+    - remove(k)
+    - values()
+    - containsKey() 判断key值是否存在
 
+#### 集合排序
+- 集合中的基本数据类型排序
+- 结合中的str排序
+- Comparator接口
+- Comparable接口
+- 数组排序
+    ``` 
+    int[] arr = {15,35,25,78,95,12}
+    Arrays.sort(arr)
+    ```
+### 泛型
+- `List<Animal> list = new ArrayList<Cat>()` // 变量声明的类型必须匹配传递给实际对象的类型
+- 泛型作为方法参数
+``` 
+    public void sellGoods(List<? extends Goods> goods) {
+        for(Goods g:goods) {
+            g.sell();
+        }
+    }
+```
+- 自定义泛型类
+``` 
+public class NumGeneric<E> {
+    private E num;
+    public E getNum() {
+        return num;
+    }
+    public void setNum(E num) {
+        this.num = num;
+    }
 
+    public static void main(String[] args) {
+        NumGeneric<Integer> intNum = new NumGeneric<>();
+        intNum.setNum(16);
+        System.out.println(intNum.getNum());
+    }
+}
+```
+- 自定义泛型方法
+```
+public class FuncGeneric {
+    public <T> void printValue(T t) {
+        System.out.println(t);
+    }
+
+    public <T extends Number> void prNum(T t){
+        System.out.println(t);
+    }
+
+    public static void main(String[] args) {
+        FuncGeneric fg = new FuncGeneric();
+        fg.printValue("Hello Generic");
+        fg.printValue(12313);
+    }
+}
+```
 
 
 
