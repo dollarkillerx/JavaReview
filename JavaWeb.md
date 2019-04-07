@@ -90,7 +90,7 @@ JavaWeb 入门
 ![](./README/javaweb.png)
 - 开发标准步骤
     - 创建Servlet类，继承HttpServlet
-    - 重写service方法，编写程序代码
+    - 重写service方法，编写程序代码 (请求处理核心方法，无论是get or post)
     - 配置web.xml 绑定URL
 - Servlet 访问方法
     - `http://ip:port/content-path/url-mapping`
@@ -98,5 +98,252 @@ JavaWeb 入门
 - 请求参数
     - request.getParameter() 接收单个参数
     - request.getParameterValues() 接收多个同名参数
+    - 获取method() `String methodName = requeset.getMethod()`
+- GET POST
+- Servlet生命周期
+    - 装载 web.xml
+    - 创建 构造函数
+    - 初始化 init()
+    - 提供服务 service()
+    - 销毁 destory()
+    当访问url的时候servlet才会被创建，tomcat只会创建一个servlet对象
+- 注解简化配置
+    - 注解简化web应用程序的配置过程
+    - servlet核心注解：@WebServlet
+- 启动时加载Servlet
+    - web.xml 使用 <load-on-startup> 设置启动加载
+    - `<load-on-startup>0~999</load-on-startup>` 从小到大执行
+    ``` 
+    <servlet>
+        <!--  servlet的别名-->
+        <servlet-name>first</servlet-name>
+        <servlet-class>com.imooc.servlet.FirstServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    ```
+    or 注解
+    ``` 
+    @WebServlet(urlPatterns="/url",loadOnStartup=2)
+    ```
+#### JSP
+- JSP执行过程
+![](./README/jsp1.png)
+![](./README/jsp2.png)
+- 基本语法
+    - JSP代码块
+    - JSP声明构造块
+    - JSP输出指令
+    - JSP处理指令
+- JSP代码块
+    - 在JSP页面中嵌入Java代码
+    - 语法 `<% JavaCode %>`
+- 声明构造块
+    - jsp声明构造块用于声明变量或方法
+    - 文法 `<%! 声明语句 %>`
+    - 示例 `<%! public int add(int a,int b) { return a+b; } %>`    
+- Jsp指令输出
+    - 显示Jsp页面中显示java代码执行结果
+    - 文法 `<%= java代码  %>`
+    - 示例 `<%= "<b>" + name + "</b>"  %>` 其实就是out.println()
+- Jsp 处理指令
+    - JSP处理指令用于提供JSP执行过程中的辅助信息
+    - 文法 `<% @jsp命令 %>`
+    - 示例 `<%@ page import="java.uitl.*" %>`
+    - 常用处理指令
+        - `<%@ page %>` 定义当前JSP页面全局设置 `<%@ page import="java.util.HashMap"%>`
+        - `<%@ include %>` 将其他JSP页面与当前JSP页面合并
+        - `<%@ taglib %>` 引入jsp标签库
+    - 注释
+        - `<%--注释--%>` jsp注释
+        - `//./*..*/` java代码注释
+        - `<!--html-->` html注释
+- Jsp页面重用
+``` 
+<%@page contentType="text/html;charset=utf-8"%>
+<%@include file="include/header.jsp" %>
+<% 
+    out.println("<h1>新闻标题</h1>");
+    out.println("<p>content....</p>");
+%>
+<%@include file="include/footer.jsp" %>
+```
+#### Servlet与JSP进阶
+- Java Web核心特征
+- Servlet核心对象
+- JSP九大内置对象
+- Http请求结构
+    - 三部分： 请求行 请求头 请求体
+    ``` 
+    String userAgent = req.getHeader("User-Agent");
+    resp.setContentType("text/html;charset=utf-8");
+    if (userAgent.indexOf("Linux")>0 && userAgent.indexOf("Android")<0){
+        resp.getWriter().println("不支持Linux系统访问");
+    }
+    ```
+- 响应的结构
+    - 三部分： 相应行， 相应头，相应体
+    ![](./README/contenttype.png)
+- 请求转发与响应重定向的使用
+    - 对于多个Servlet(JSP)之间跳转有两种方式
+    - `request.getRequestDispatcher(跳转url).forward(req,resp)` 请求转发 url不会变换
+    - `response.sendRedirect()` 相应重定向 url会发生变化 浏览器会发生两次url请求
+- 请求转发与响应重定向的原理
+    - 请求转发是服务器跳转 只会产生一次url请求 `req.getRequsetDispatcher(url),forward(req,resp)`
+    ![](./README/qqzf.png)
+    - 相应重定向 会发生两次url请求 (浏览器跳转) `resp.sendRedirect()`
+    ![](./README/xycdx.png)
+- 设置请求自定义属性
+    - 设置 `request.setAttribute(属性名称,属性值)`
+    - 获取 `Object attr = request.getAttribute(属性名称)`
+#### Cookie & Section
+- Cookie 保持到本地的文本信息
+    - 设置 如果没有设置有效期就是当前浏览器窗口的生命周期 `Cookie cookie = new Cookit(key,value)`
+    ``` 
+         resp.setContentType("text/html;charset=utf-8");
+         System.out.println("用户登录成功");
+         Cookie cookie = new Cookie("user","admin");
+         cookie.setMaxAge((60*60*27*7)); // 设置有效期 s
+         resp.addCookie(cookie);
+         resp.getWriter().println("设置cookie");
+    ```
+    - 获取 `req.getCookies()`
+    ``` 
+        Cookie[] cs = req.getCookies();
+        for(Cookie c:cs){
+            System.out.println(c.getName() + " : " + c.getValue());
+        }
+    ```
+- Session 用户回话 保持浏览器对应信息
+    > 默认存储在Tomcat的内存中 具有时效性 默认是30min
+    - Session底层原理
+    ![](./README/session.png) 
+- ServletContext与三大作用域对象
+    - ServletContext(Servlet上下文对象) 是web应用全局对象
+    - 一个web应用只会创建一个ServletContext对象
+    - ServletContext随着web应用启动而自动创建 app整个生命周期
+    ``` 
+        // 设置
+        ServletContext context = req.getServletContext();
+        context.setAttribute("copyright","2019 WorldLink");
+        context.setAttribute("auth","dollarkiller");
+        
+        // 获取
+        ServletContext context = req.getServletContext();
+        String copyright = (String)context.getAttribute("copyright");
+        String auth = (String)context.getAttribute("auth");
+        resp.setContentType("text/html;charset=utf-8");
     
+        resp.getWriter().println("copy: "+copyright +" auth: "+ auth);
+    ```
+    - JavaWeb 三大作用于对象
+        - HttpServletRequest请求对象 请求结束就会被销毁
+        - HttpSession 用户回话对象 session过期就会被销毁
+        - ServletContext web应用全局对象 贯穿整个web应用的生命周期
+            
+#### 中文乱码问题
+- Tomcat默认使用字符集ISO-8859-1 
+``` 
+req.setCharacterEncoding("UTF-8");
+resp.setContentType("text/html;charset=utf8");
+String utf8Ename = new String(ename.getBytes("iso-8859-1"),"utf-8)
+```
+- 对于get tomcat8.x 默认get请求做了utf8转换
+    - 对于tomcat早期版本 需要修改配置文件 apache-conf-server.xml
+        - `<port="8080" protocol="http/1.1" URIEncoding="UTF-8">` <8配置
+
+#### web.xml 常用配置
+- 修改web应用默认首页
+    ``` 
+        <welcome-file-list>
+            <welcome-file>index.html</welcome-file>
+        </welcome-file-list>
+    ```
+- Servlet通配符映射及初始化参数
+    - 全局参数
+        ``` 
+        <context-param>
+            <param-name>username</param-name>
+            <param-value>DollarKiller</param-value>
+        </context-param>
+        
+        获取
+         ServletContext context = req.getServletContext();
+         String name = context.getInitParameter("username");
+        ```
+    - 
+- 设置404,500等状态码默认页面
+``` 
+String url = request.getRequestURL(); 获取当前访问url 返回是stringbuffer
+
+@WebServlet("/pwd/*")
+public class PatternServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html;charset=utf-8");
+        String url = req.getRequestURI().toString();
+        System.out.println(url);
+        String id = url.substring(url.lastIndexOf("/")+1);
+        PrintWriter out = resp.getWriter();
+        if (id.equals("1")){
+            out.println("1");
+        }else{
+            out.println("O(∩_∩)O哈哈~");
+        }
+    }
+}
+
+<error-page>
+    <error-code>404</error-code>
+    <location>/error/404.html</location>
+</error-page>
+<error-page>
+    <error-code>500</error-code>
+    <location>/error/500.html</location>
+</error-page>
+```
+- JSP 9大内置对象
+![](./README/nzdx.png)
+- Web应用程序的打包与发布
+    - war包发布
+    - 发布路径:{TOMCAT_HTML}/webapps
+#### JSTL与EL表达式
+- JSTL常用语法
+- EL JSP的输出
+- EL (Expression Language) 表达式，简化JSP输出
+    - 基本语法
+        - `${表达式}`
+    - EL的作用域对象 requestScope 作用域对象 
+    ![](./README/scope.png)
+    - 如果没有说明就会重小到大依次获取
+    ``` 
+        <h1>姓名: ${requestScope.student.name}</h1>
+        <h2>手机: ${requestScope.student.mobile}</h2>
+        <h2>评级: ${requestScope.grade}</h2>
+    ```
+    - EL表达式输出
+        - 文法 `${[scope].Attribute[.子属性]}`
+        - 本质toString()
+        - `${emp.salary + 300}` 可以运输
+        - `${1 <=3 && 2>4}` bool
+        - 获取输入参数值
+            - param对象简化参数 `${param.参数名}`
+- JSTL 标签库 简化JSP标签
+    - 组件
+        - spec 定一包 必须
+        - impl 实现包 必须
+        - compat 1.0 兼容包 备选
+    - 安装
+        - 实现1
+            - Jar包 /WEB-INF/lib 推荐 只会对当前工程生效
+        - 实现2
+            - 复制到tomcat安装目录的lib下
+    
+
+
+
+
+
+
+
+
     
