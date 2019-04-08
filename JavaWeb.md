@@ -329,7 +329,7 @@ public class PatternServlet extends HttpServlet {
             - param对象简化参数 `${param.参数名}`
 - JSTL 标签库 简化JSP标签
     - 组件
-        - spec 定一包 必须
+        - spec 定义包 必须
         - impl 实现包 必须
         - compat 1.0 兼容包 备选
     - 安装
@@ -337,10 +337,73 @@ public class PatternServlet extends HttpServlet {
             - Jar包 /WEB-INF/lib 推荐 只会对当前工程生效
         - 实现2
             - 复制到tomcat安装目录的lib下
-    
-
-
-
+    - JSTL标签库种类
+        - 核心标签库 core
+        - 格式化输出标签库 fmt
+        - sql操作标签库 sql
+        - xml操作标签库 xml
+        - 函数标签库 functions
+    - 引入核心库
+        - `<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>`
+        - META-INF 描述数据
+    - 判断标签
+        - JSTL核心库提供两组判断标签
+        - `<c:if>` 单分支判断
+        - `<c:choose> <c:when> <c:otherwise>` 多分支判断
+        ``` 
+        <c:if test="${score>=60}">
+        <h1 style="color:green">恭喜你，已通过测试</h1>
+        </c:if>
+        <c:if test="${score<60}">
+            <h1 style="color:red">再接再厉</h1>
+        </c:if>
+        
+        <c:choose>
+            <c:when test="${grade == 'A'}">
+                <h2>你很优秀</h2>
+            </c:when>
+            <c:when test="${grade == 'B'}">
+                <h2>不错欧</h2>
+            </c:when>
+            <c:when test="${grade == 'C'}">
+                <h2>加油欧</h2>
+            </c:when>
+            <c:otherwise>
+                <h3>错误</h3>
+            </c:otherwise>
+        </c:choose>
+        ```
+    - 遍历集合
+        - `<c:forEach>` 遍历集合中的每一对对象
+        ``` 
+        items数据源 varStatus 索引
+        <c:forEach var="p" items="${persons}" varStatus="idx">
+        第${idx.index + 1}位<br/>
+        姓名:${p.name} 性别${p.sex} 年龄 ${p.age}
+        </c:forEach>
+        
+        <c:forEach items="${requestScope.companies}" var="c" varStatus="idx">
+            <h2>${idx.index}  ${c.cname} === ${c.url}</h2>
+        </c:forEach>
+        ```
+    - fmt格式化标签库
+        - uri `http://java.sun.com/jsp/jstl/fmt`
+        - `<fmt:formatDate value="" pattern=""> ` 格式化日期标签
+        - `<fmt:formatNumber value="" pattern="">` 格式化数字标签
+        ``` 
+        <%--
+        formatData pattern
+        yyyy 四位年
+        MM 两位月
+        dd 两位日
+        HH 24小时
+        hh 12小时
+        mm 分钟
+        ss - 秒数
+        SSS 毫秒
+        --%>
+        <fmt:formatDate value="${requestScope.now}" pattern="yyyy年MM月dd日 HH:mm:ss:SSS"/>
+        ```
 
 
 

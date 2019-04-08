@@ -29,3 +29,163 @@ Binding(CTRL+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2019-04-08 21:23:16.923 -----------------------------------------------
+eclipse.buildId=4.2.0.201903290612-RELEASE
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.egit.core 1 0 2019-04-08 21:23:20.236
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-04-08 21:23:21.383
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-04-08 21:23:21.383
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@775c4054,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7b2e931,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.078
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.jst.server.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.078
+!MESSAGE Project facet jst.ejb has not been defined. It is used in plugin org.eclipse.jst.server.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.078
+!MESSAGE Project facet jst.ear has not been defined. It is used in plugin org.eclipse.jst.server.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.079
+!MESSAGE Project facet jst.connector has not been defined. It is used in plugin org.eclipse.jst.server.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.079
+!MESSAGE Project facet jst.appclient has not been defined. It is used in plugin org.eclipse.jst.server.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.079
+!MESSAGE Project facet jst.utility has not been defined. It is used in plugin org.eclipse.jst.server.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.080
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.jst.server.generic.jonas.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.080
+!MESSAGE Project facet jst.ejb has not been defined. It is used in plugin org.eclipse.jst.server.generic.jonas.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.080
+!MESSAGE Project facet jst.ear has not been defined. It is used in plugin org.eclipse.jst.server.generic.jonas.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.081
+!MESSAGE Project facet jst.connector has not been defined. It is used in plugin org.eclipse.jst.server.generic.jonas.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.081
+!MESSAGE Project facet jst.appclient has not been defined. It is used in plugin org.eclipse.jst.server.generic.jonas.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.081
+!MESSAGE Project facet jst.utility has not been defined. It is used in plugin org.eclipse.jst.server.generic.jonas.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.081
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.jst.server.preview.adapter.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.082
+!MESSAGE Project facet jst.utility has not been defined. It is used in plugin org.eclipse.jst.server.preview.adapter.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.082
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.jst.server.tomcat.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.082
+!MESSAGE Project facet jst.utility has not been defined. It is used in plugin org.eclipse.jst.server.tomcat.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2019-04-08 21:24:06.083
+!MESSAGE Project facet jst.webfragment has not been defined. It is used in plugin org.eclipse.jst.server.tomcat.core.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:44.731
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:44.731
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6afb240d[org.springframework.tooling.boot.ls:1.5.0.201903290544(id=527)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:44.732
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:44.753
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.639
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.QPvELauD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.639
+!MESSAGE subscribing to classpath changes: sts4.classpath.QPvELauD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.640
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.641
+!MESSAGE subsribers = [sts4.classpath.QPvELauD]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.641
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.643
+!MESSAGE project WebLearning ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.644
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.644
+!MESSAGE Preparing classpath changed notification WebLearning
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.644
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.QPvELauD => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.644
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.647
+!MESSAGE classpath=22 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.648
+!MESSAGE executing callback sts4.classpath.QPvELauD WebLearning false 22
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:26:48.679
+!MESSAGE executing callback sts4.classpath.QPvELauD SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:28:43.749
+!MESSAGE Preparing classpath changed notification WebLearning
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:28:43.749
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:28:43.750
+!MESSAGE classpath=22 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:28:43.750
+!MESSAGE executing callback sts4.classpath.QPvELauD WebLearning false 22
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:28:43.756
+!MESSAGE executing callback sts4.classpath.QPvELauD SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:30:30.270
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QPvELauD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:30:30.270
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.QPvELauD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:30:30.270
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-08 21:30:30.271
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QPvELauD => OK
