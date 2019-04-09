@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <meta charset="utf-8">
@@ -31,5 +32,7 @@ ss - 秒数
 SSS 毫秒
 --%>
 <fmt:formatDate value="${requestScope.now}" pattern="yyyy年MM月dd日 HH:mm:ss:SSS"/>
+<h2><fmt:formatNumber value="${requestScope.amt}" pattern="0.00"/> </h2>
+<h2><c:out value="${nothing}" default="无"/></h2>
 </body>
 </html>

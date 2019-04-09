@@ -404,6 +404,22 @@ public class PatternServlet extends HttpServlet {
         --%>
         <fmt:formatDate value="${requestScope.now}" pattern="yyyy年MM月dd日 HH:mm:ss:SSS"/>
         ```
+        - 数字格式化
+        ``` 
+        <fmt:formatNumber value="${requestScope.amt}" pattern="0.00"/> 
+        ```
+        - c：out
+            - 默认值
+                - `<c:out value="${nothing}" default="无"/>`
+            - 转义
+                - `<c:out value="${html}" escapeXml="true"></c:out>`
+#### JAVAEE MVC登录注册案例
+- 文件上传
+    - 需要包
+        - Commons IO
+        - Commons FileUpload
+        
+
 
 
 
