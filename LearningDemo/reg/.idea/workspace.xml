@@ -6,16 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b09362-ff7a-488c-b86a-891a176a8f3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dollarkiller/servlet/InitServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dollarkiller/servlet/RegistServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dollarkiller/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaWeb.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaWeb.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebLearning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebLearning/out/artifacts/WebLearning_war_exploded/fmt.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebLearning/out/artifacts/WebLearning_war_exploded/fmt.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebLearning/web/fmt.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebLearning/web/fmt.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="f8b09362-ff7a-488c-b86a-891a176a8f3e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,6 +207,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -319,16 +311,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554814575119</updated>
-      <workItem from="1554814581148" duration="3887000" />
+      <workItem from="1554814581148" duration="4044000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3887000" />
+    <option name="totallyTimeSpent" value="4044000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="624" y="41" width="1717" height="889" extended-state="0" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -336,7 +327,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16185898" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18154584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" weight="0.32924107" />
       <window_info anchor="bottom" id="Terminal" />
