@@ -418,6 +418,37 @@ public class PatternServlet extends HttpServlet {
     - 需要包
         - Commons IO
         - Commons FileUpload
+        ``` 
+            public static String getUUIDFileName(String fileName) {
+                String file = fileName.substring(fileName.lastIndexOf("."));
+                file = UUID.randomUUID().toString().replace("-","") + file;
+                return file;
+            }
+        
+            // 文件上传项
+            // 文件上传功能
+            // 获得弄个文件上传名称
+            String fileName = fileItem.getName();
+            // 通过工具类获得唯一文件名
+            String uuidFileName = UploadUtils.getUUIDFileName(fileName);
+    
+            // 获取文件上传的数据
+            InputStream is = fileItem.getInputStream();
+            // 获取文件上传路径
+            String path = this.getServletContext().getRealPath("/UPLOAD");
+            // 将输入流对接到输出流
+            String url = path + "\\" + uuidFileName;
+            OutputStream os = new FileOutputStream(url);
+            int len = 0;
+            byte[] b = new byte[1024];
+            while ((len = is.read(b))!=-1) {
+                os.write(b,0,len);
+            }
+            is.close();
+            os.close();
+        ```
+#### JSON
+- 
         
 
 

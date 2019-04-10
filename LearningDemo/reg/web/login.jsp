@@ -10,9 +10,26 @@
 <body>
     <div class="login">
         <div class="header">
+            <%
+                if(session.getAttribute("username")!=null) {
+                String username = (String)session.getAttribute("username");
+            %>
             <h1>
-                <a href="./login.jsp">登录</a> <a href="./regist.jsp">注册</a>
+               ${username} <a href="./regist.jsp">注册</a>
             </h1>
+            <%
+                }
+            %>
+
+            <%
+                if(session.getAttribute("username")==null) {
+                    %>
+                <h1>
+                    <a href="./login.jsp">登录</a> <a href="./regist.jsp">注册</a>
+                </h1>
+                    <%
+                }
+            %>
 
         </div>
         <form action="" method="post">
