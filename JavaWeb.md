@@ -447,9 +447,89 @@ public class PatternServlet extends HttpServlet {
             is.close();
             os.close();
         ```
-#### JSON
-- 
-        
+#### JSON and Javascript
+- Json与字符串互相转换
+- JSON.parse() 装换为JSON对象
+- Json.stringify() 将JSON对象转换为str
+#### FastJSON Java双剑合璧
+```
+	格式化
+    @JSONField(format="yyyy-MM-dd HH:mm:ss")
+	private Date hdate;
+	private Float salary;
+    不解析此
+    @JSONField(serialize=false)
+    
+
+    序列化
+    Employee employee = new Employee();
+    employee.setEmpno(4488);
+    employee.setEname("王晓东");
+    employee.setSalary(1000f);
+    employee.setDname("市场部");
+    Calendar c = Calendar.getInstance();
+    c.set(2019, 0,30,0,0,0);
+    employee.setHdate(c.getTime());
+    // FastJSON 提供了JSON对象，完成对象与JSON的装换
+    String json = JSON.toJSONString(employee);
+    
+    反序列化
+    Employee emp = JSON.parseObject(json,Employee.class);
+    System.out.println(emp);
+```
+FastJSON对象数组序列化与反序列化
+```
+String json = JSON.toJSONString(emplist);
+System.out.println(json);
+List<Employee> emps = JSON.parseArray(json,Employee.class);
+for(Employee e: emps) {
+    System.out.println(e);
+}
+```
+#### JAVA正则表达式
+语法规则
+- `[abc]` a or b or c
+- `[a-zA-Z]` z~z A~Z 
+- `[0-9]` \d
+- `X{n}` X 恰好n次
+- `X{n,}` X 至少n次
+- `X{n,m}` n~m次
+- `\D`非数组
+- `\s` 空白字符 制表符 换行符
+- `\S` 非空
+- `\w` 单词字符 `[a-zA-Z_0-9]`
+- `\W` 非单词str
+- `^`开头 `$`结尾
+```
+public class Zzts {
+	public static void main(String[] args) {
+		String data = "1";
+		String regex = "\\D";
+		boolean flag = data.matches(regex);
+		System.out.println(flag);
+	}
+}
+.matches 返回true of false
+```
+#### 过滤器
+> 请求拦截 预处理 
+- web资源权限访问控制
+- 请求字符集编码处理
+- 内容敏感字符词汇过滤
+![](./README/glvqi.png)
+- 生命周期
+  - web应用程序启动时，web服务器创建Filter实例对象，以及对象的实例化
+  - 当请求访问与过滤相关的web资源时，过滤器拦截请求，完成指定功能
+  - Filter对象创建后会驻留在内存中，在web应用溢出或服务器停止时才会销毁
+  - 过滤器的创建和销毁由web服务器负责
+- 实现步骤
+  - 1.编写Java类实现Filter接口，并实现其doFIlter方法
+  - 2.web.xml文件中对filter类进行注册，并设置所拦截的资源
+  - 3.过滤器链
+    - 在一个web应用中，多个过滤器组合起来称为一个过滤器链
+    - web.xml文件中注册顺序
+![](./README/glql.png)
+    
 
 
 
