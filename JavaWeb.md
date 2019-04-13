@@ -529,8 +529,82 @@ public class Zzts {
     - 在一个web应用中，多个过滤器组合起来称为一个过滤器链
     - web.xml文件中注册顺序
 ![](./README/glql.png)
-    
+####  过滤器实现
+  - 1.创建过滤器类 需要实现Filter接口
+  - init() 初始化过滤器
+  - destory() 销毁
+  - doFilter 完成功能 
+  - 配置过滤器 web.xml
+    - 1.注册过滤器
+    - 2.拦截映射配置
+    ```
+    <filter>
+        <filter-name>charsecterEncodingFIlter</filter-name>
+        <filter-class>filter.CharacterEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>charsecterEncodingFIlter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    ```
+    ```
+    	@Override
+        public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
+                throws IOException, ServletException {
+            // TODO 自动生成的方法存根
+            arg0.setCharacterEncoding(config.getInitParameter("charset"));
+            arg2.doFilter(arg0,arg1);
+        }
 
+    ```
+#### 监听器
+![](./README/jtq.png)
+- ServletContext,HtpSession,ServletRequest 等域对象的创建,销毁及其属性修改发生变化的事件
+- 监听器可以在事件发生前后进行一些必要的处理操作
+- 常见应用场景
+  - 统计页面在线人数
+  - 页面访问量统计
+  - 应用启动时完成信息初始化工作
+  - 与Spring结合
+- 实现步骤
+  - 编写java实现类监听接口,并实现其接口方法
+  - web.xml 进行注册
+  ```
+   <listener>
+  	<listener-class>com.dollarkiller.listener.MyFirstListener</listener-class>
+  </listener>
+  ```
+  - 多监听器启动顺序
+    - 按web.xml 配置顺序
+  - 监听器的分类
+    - 监听对象
+      - ServletContext 对象监听器
+      - HttpSession 对象监听器
+      - ServletRequest对象监听器
+    - 监听事件
+      - 域对象自生的创建和销毁事件监听器
+      - 域对象中的属性的创建,替换和消除事件监听器
+        - ServletContext
+        - HttpSession
+          - get/set
+        - ServletRequset
+      - 绑定到session中某个对象的状态事件监听器
+    - 域对象自身的创建和销毁事件监听器
+      - ServletContext
+        - ServletContextListener
+      - HttpSession
+        - HttpSessionListener
+      - ServletRequset
+        - ServletRequestListener
+    - 属性监听器
+      - SerletContext
+        - ServletCOntextAttributeListener
+      - HttpSession
+        - HttpSessionAttributeListener
+      - ServletRequset
+        - ServletRequsetAttributeListener
+      - HttpSessionBindingListener 绑定解绑
+      - 不需要web.xml注册
 
 
 
