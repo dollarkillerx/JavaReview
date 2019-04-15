@@ -606,8 +606,35 @@ public class Zzts {
       - HttpSessionBindingListener 绑定解绑
       - 不需要web.xml注册
 
+#### 验证码
+- kcaptcha
+  - jsp/servlet
+....
 
+#### 解析Excel/Word 生成Excel/World
+- 第三方包 POI
+- 拆解任务
+  - 上传文件 Commons FileUpload
+  - Excel,Word    Apache POI
+  - 下载文件 ServletOuputStream
+- 这个我现在还用不到我就先不写了
 
+#### Linux Java生产环境
+- profile
+  ```
+  JAVA_HOME=/opt/jdk1.8.0_144
+  CLASSPATH=.:$JAVA_HOME/lib
+  PATH=$OATH:$JAVA_HTML/bin
+  export JAVA_HTML CLASSPATH PATH
 
+  source profile
+  ```
 
-    
+#### 小demo
+- 页面 Jsp JSTL JS+CSS
+- 核心控制 Filter Listener Servlet
+- 技术应用
+  - JSP+JSTL
+  - Servket及其内部判断
+  - LocalCache
+  - Filter解决数据传输乱码

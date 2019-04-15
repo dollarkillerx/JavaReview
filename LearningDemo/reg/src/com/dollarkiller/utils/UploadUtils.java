@@ -15,6 +15,7 @@ public class UploadUtils {
         String file = fileName.substring(fileName.lastIndexOf("."));
         file = UUID.randomUUID().toString().replace("-","") + file;
         return file;
+
     }
 
 }

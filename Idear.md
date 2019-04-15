@@ -1,0 +1,23 @@
+# idea快捷键
+- Ctrl+Shift+N 文件查找
+- Ctrl+Shift+F 按str全局查找
+- 代码快捷键
+  - Ctrl + 左右箭头
+  - Ctrl+shift+enter 自动完成
+  - Alt + Enter 智能提示
+  - Ctrl+alt+L 格式化代码
+  - Shift + F6 对影响的代码重命名
+  - 书签 ctrl shift + 123123 访问 ctrl 1231  shift + f11 显示完全书签
+  - ctrl + e 最近访问的文件 ctrl + shift + e 最近修改的文件
+- Live Template
+  - psvm 快熟生成main func
+  - sout 输出
+  - psfs `public static final String`
+  - fori for循环
+  - itli list迭代
+- 调试与打包
+  - shift + F9 调试
+  - shift f10 运行
+  - F8 单步
+  - F9 恢复运行至下一个断点
+  - Shift ctrl f8 查看所以断点

@@ -6,7 +6,9 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -23,7 +25,10 @@ public class InitServlet extends HttpServlet {
         if(this.getServletContext().getAttribute("userList")==null){
             List<User> userList = new ArrayList<>();
             this.getServletContext().setAttribute("userList",userList);
+            
+
         }
 
     }
+
 }
