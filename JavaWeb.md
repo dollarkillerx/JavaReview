@@ -638,3 +638,7 @@ public class Zzts {
   - Servket及其内部判断
   - LocalCache
   - Filter解决数据传输乱码
+
+#### SSO单点登录
+- 单点登录服务器,web应用*2
+- 技术 Jsp Servlet HttpClient

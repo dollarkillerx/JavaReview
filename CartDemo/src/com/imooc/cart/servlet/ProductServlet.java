@@ -1,5 +1,7 @@
 package com.imooc.cart.servlet;
 
+import com.imooc.cart.data.LocalCache;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +23,7 @@ public class ProductServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("products",null);
+        req.setAttribute("products", LocalCache.getProduct());
         req.getRequestDispatcher("/WEB-INF/views/biz/list.jsp").forward(req,resp);
     }
 
