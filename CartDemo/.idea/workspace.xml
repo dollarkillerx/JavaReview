@@ -7,16 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1a46c74-d7c7-4005-b287-b9788249393c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/taglibs_standard_spec_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/imooc/cart/data/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/imooc/cart/servlet/CartServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CartDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/imooc/cart/data/LocalCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/imooc/cart/data/LocalCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/imooc/cart/servlet/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/imooc/cart/servlet/ProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/biz/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/biz/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mysql.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+            <state relative-caret-position="880">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -42,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/biz/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="2244">
               <caret line="102" column="68" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="68" />
             </state>
           </provider>
@@ -51,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/data/LocalCache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
+            <state relative-caret-position="484">
               <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -69,11 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/servlet/CartServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="193">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -81,7 +69,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/data/Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71">
+            <state relative-caret-position="704">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
@@ -90,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/filter/CHarsetEncodingFIlter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="352">
               <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -134,9 +122,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="885" />
-    <option name="y" value="42" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="166" />
+    <option name="y" value="36" />
     <option name="width" value="1717" />
     <option name="height" value="1053" />
   </component>
@@ -146,7 +134,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +211,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,14 +332,15 @@
       <updated>1555337881520</updated>
       <workItem from="1555337888270" duration="1214000" />
       <workItem from="1555416651361" duration="5229000" />
+      <workItem from="1555736157653" duration="62000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6443000" />
+    <option name="totallyTimeSpent" value="6505000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="885" y="42" width="1717" height="1053" extended-state="0" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
@@ -360,8 +349,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.15877771" />
-      <window_info anchor="bottom" id="Messages" weight="0.31527627" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.16079059" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
@@ -376,6 +364,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.31527627" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -408,20 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/data/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -429,26 +404,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/filter/CHarsetEncodingFIlter.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="880">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/biz/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="2244">
           <caret line="102" column="68" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/data/LocalCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
+        <state relative-caret-position="484">
           <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -462,13 +434,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/servlet/CartServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/data/Cart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="704">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/filter/CHarsetEncodingFIlter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/imooc/cart/servlet/CartServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>

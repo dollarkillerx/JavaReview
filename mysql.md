@@ -165,3 +165,34 @@ UNION ALL不会去掉重复的
    [ORDER BY {col_name|posistion|} [ASC|DESC]]
    [LIMIT]
    ```
+   - 检测值在一个范围 BETWEEN AND
+     - `SELECT id,username,age,sex FROM user1 WHERE age BETWEEN 18 AND 30;`
+     - 不在某个范围 NOT BETWEEN AND
+   - 指定集合
+     - [NOT] IN (value,...)
+   - 分组
+     - `SELECT * FROM tab_name GROUP BY(\`sex\`)` 通过sex字段对数据进行分组
+     - 通过Having子句对结果二次分组
+     - `SELECT * FROM tab-name GROUP BY(\`sex\`) HAVING (`age`>15)`
+   - ORDER BY 随机获取数据
+     - `SELECT id,username.age FROM user1 ORDER BY RAND()`
+ - 多表联查
+   - 笛卡尔积 `SELSECT a.id,b.name FROM a,b`
+   - 外链接 
+   - 内链接 `SELECT a.id,b.name FROM a JOIN b ON a.id = b.id`
+ - 外键约束
+   - `[CONSTRAINT 外键名称] FOREIGN KEY(字段名称)REFERENCES 主表(字段名称)`
+ - 子查询的使用
+   - `SELECT name FROM tab_name WHERE col_name=(SELECT ...)`
+      ```
+      SELECT id FROM emp
+      WHERE depId IN (SELECT id FROM dep)
+      ```
+   - `SELECT * FROM emp WHERE EXISTS (SELECT depName FROM dep WHERE id = 10)`
+   - 带有ANY、SOME、ALL关键字的子查询
+ - 自身链接查询 重要 (无限极分类)
+   ```
+   SELECT s.id,s.cateName AS sCateName,p.cateName AS pCateName
+   FROM cate AS s
+   LEFT JOIN cate AS p
+   ```
